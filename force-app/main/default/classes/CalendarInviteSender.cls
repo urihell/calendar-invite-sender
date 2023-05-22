@@ -15,7 +15,7 @@ public class CalendarInviteSender {
             
             // Set the subject and body
             email.setSubject('Service Appointment Calendar Invite: ' + sa.Subject );
-            String body = 'Hi' + contact.Name + 'Here is the calendar invite for your Service Appointment.\n\n Please click on the link to add it to your calendar.';
+            String body = 'Hi ' + contact.Name + ' Here is the calendar invite for your Service Appointment.\n\n Please click on the link to add it to your calendar.';
             body += '\n\nStart: ' + sa.SchedStartTime.format('MMMM d, yyyy h:mm a');
             body += '\nEnd: ' + sa.SchedEndTime.format('MMMM d, yyyy h:mm a');
             email.setHtmlBody(body);
